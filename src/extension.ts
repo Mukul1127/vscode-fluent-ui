@@ -219,9 +219,9 @@ export function activate(context: vscode.ExtensionContext) {
     const appDir = path.dirname(require!.main!.filename);
 
     const base = path.join(appDir, 'vs', 'code');
-    const htmlFile = path.join(base, CONTAINER, 'workbench', 'workbench.html');
+    const htmlFile = path.join(base, CONTAINER, 'workbench', 'workbench.esm.html');
     const htmlBakFile = path.join(base, CONTAINER, 'workbench', 'workbench.fui');
-    const jsFile = path.join(base, CONTAINER, 'workbench', 'fui.js');
+    const jsFile = path.join(base, CONTAINER, 'workbench', 'workbench.js');
 
     /**
      * Installs full version
