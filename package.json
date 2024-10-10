@@ -29,15 +29,15 @@
     "contributes": {
         "commands": [
             {
-                "command": "fluent-ui-vscode.enableEffects",
+                "command": "extension.enableEffects",
                 "title": "Fluent UI: Enable"
             },
             {
-                "command": "fluent-ui-vscode.reloadEffects",
+                "command": "extension.reloadEffects",
                 "title": "Fluent UI: Reload"
             },
             {
-                "command": "fluent-ui-vscode.disableEffects",
+                "command": "extension.disableEffects",
                 "title": "Fluent UI: Disable"
             }
         ],
