@@ -1,5 +1,5 @@
 // eslint-disable-next-line @typescript-eslint/naming-convention
-const UglifyJS = require('uglify-js');
+const UglifyJS = require('terser');
 const sharp = require('sharp');
 import minify from '@node-minify/core';
 import cssnano from '@node-minify/cssnano';
