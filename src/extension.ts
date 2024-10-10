@@ -254,16 +254,16 @@ export function activate(context: vscode.ExtensionContext) {
         }
     }
 
-    const installFUI = vscode.commands.registerCommand('fluent-ui-vscode.enableEffects', install);
+    const installFUI = vscode.commands.registerCommand('extension.enableEffects', install);
     const reloadFUI = vscode.commands.registerCommand(
-        'fluent-ui-vscode.reloadEffects',
+        'extension.reloadEffects',
         async () => {
             await clearPatch();
             install(true);
         },
     );
     const uninstallFUI = vscode.commands.registerCommand(
-        'fluent-ui-vscode.disableEffects',
+        'extension.disableEffects',
         uninstall,
     );
 
