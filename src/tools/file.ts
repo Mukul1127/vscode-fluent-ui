@@ -14,7 +14,17 @@ export function getWorkbenchDir() {
         window.showInformationMessage(messages.pathLookupFailed);
     }
     const base = path.join(appDir, 'vs', 'code');
-    return path.join(base, 'electron-sandbox', 'workbench');
+
+    let workbench = path.join(base, 'electron-sandbox', 'workbench');
+    if (!existsSync(workbench)) {
+         workbench = path.join(base, 'electron-browser', 'workbench');
+    }
+
+    if (!existsSync(workbench)) {
+         window.showInformationMessage(messages.pathLookupFailed);
+    }
+    
+    return workbench;
 }
 
 /** Get workbench html file path */
